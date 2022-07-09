@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function CountUp() {
+const CountUp = (): JSX.Element => {
+  // 返り値の型を指定しました。
   const [count, setCount] = useState(0);
 
   return (
@@ -12,5 +13,6 @@ function CountUp() {
       <p>{new Date().toTimeString()}</p>
     </>
   );
-}
+};
+
 export default CountUp;
